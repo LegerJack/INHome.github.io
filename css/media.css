@@ -1,0 +1,17 @@
+@media screen and (max-width: 450px){
+    .icon>h1{
+        font-size: 60px; 
+    }
+    .icon>h3{
+        font-size: 21px
+    }
+    .nav-on{display: none;}
+    .room{
+        position:relative;
+        right: 40px;
+    }
+    .content1>h1{
+        margin: 0;
+    }
+    .card{border: none;}
+}
