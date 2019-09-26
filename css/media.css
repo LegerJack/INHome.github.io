@@ -1,4 +1,4 @@
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .icon>h1{
         font-size: 60px; 
     }
@@ -6,10 +6,12 @@
         font-size: 21px
     }
     .nav-on{display: none;}
+	.navbar-brand{display: none;}
     .room{
         position:relative;
         right: 40px;
     }
+	@media screen and (max-width:)
     .content1>h1{
         margin: 0;
     }

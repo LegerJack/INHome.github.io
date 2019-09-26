@@ -12,7 +12,6 @@ hr{
     border-color: #3a1f5d;
 }
 img{
-	background-color: white;
     width: 300px; height:180px;
     border: 1px solid #c83660;
 }
@@ -30,7 +29,20 @@ header>h1,header>h3,.icon>h1,.icon>h3{
 	text-shadow: 0 5px 10px;
     display: block;
 }
+.navbar-brand, .nav-link{
+	color:   #c83660 !important;
+}
+.nav-link{
+	text-align: center
+}
+.nav-link:hover{
+	background-color:#f6d365;
+	border-radius: 25px;
+}
 
+.navbar-toggler{
+	border: none;
+}
 .form{
 	text-align: center;
 }
@@ -61,18 +73,15 @@ form>.button:hover{background-color: #3a1f5d;}
     padding: 18px 32px;
     font-size: 30px;
 }
-
-.content1{margin: 0px 32px;}
-.content1>h1{color:#c83660; }
-
-.room, .card{display: inline-block;}
+.center{text-align: center;}
+.container>h1{color:#c83660; }
 .card{
-    border: 2px solid #c83660;
-    border-radius: 10px 10px 10px 10px;
-    padding: 20px;
-    background-color:#e15249;
-    margin: 20px 5px;
+	background-color: #c83660;
+	color:#FFF;
+	margin: 10px 20px;
 }
+.room, .card{display: inline-block;}
+.room{text-align: center;}
 select{
 	-webkit-appearance: none;
 	-moz-appearance: none;
