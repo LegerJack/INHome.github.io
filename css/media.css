@@ -11,9 +11,12 @@
         position:relative;
         right: 40px;
     }
-	@media screen and (max-width:)
+	
     .content1>h1{
         margin: 0;
     }
     .card{border: none;}
 }
+@media screen and (max-width: 1000px){
+		.navbar-brand{display: none;}
+	}
