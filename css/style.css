@@ -37,7 +37,6 @@ header>h1,header>h3,.icon>h1,.icon>h3{
 }
 .nav-link:hover{
 	background-color:#f6d365;
-	border-radius: 25px;
 }
 
 .navbar-toggler{
@@ -100,4 +99,7 @@ option{
 	border-radius: 20px;
 	color: #f6d365;
 	font-size: 10px;
+}
+i{
+	width: 100%;
 }
