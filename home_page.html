@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IN HOME</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-           <nav class="navbar navbar-expand-lg navbar-light" style="background-color:inherit;">
+           <nav class="navbar navbar-expand-lg navbar-light center" style="background-color:inherit;">
            		<a class="navbar-brand" href="#">
 				   <div class="icon">
 							<h1>
@@ -17,7 +18,7 @@
 							</h1>
 						</div>
 				</a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				  <button class="navbar-toggler center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<div class="icon">
 						<h1>
 							<u>IN HOME</u>
@@ -28,96 +29,352 @@
 			  <div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 				  <li class="nav-item ">
-					<a class="nav-link disabled" href="home_page.html">Комнаты</a>
+					<a class="nav-link active" href="home_page.html">Комнаты</a>
 				  </li>
 				   <li class="nav-item">
 					<a class="nav-link" href="device_page.html">Устройства и Датчики</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="makros.html">Макросы</a>
+					<a class="nav-link" href="#">Макросы</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link  active"  href="index.html">Вход</a>
+					<a class="nav-link  "  href="index.html">Вход</a>
 				  </li>
 				</ul>
 			  </div>
 			</nav>
     <div class="container">
-        <h1><u>КОМНАТЫ</u></h1>
-        <div class="container center">
-          
+        <h1>КОМНАТЫ</h1>
+        <div class="container center bord">
                <div class="card" style="width: 18rem;">
 				  <img class="card-img-top" src="img/Room/Gost.jpg" alt="Гостиница">
 				  <div class="card-body">
 					<h5 class="card-title">Гостиница</h5>
-					<a href="#" class="btn btn-outline-light btn-lg">Просмотр</a>
+					<button data-toggle="modal" data-target="#modal_gost" class="btn btn-outline-info btn-lg">Просмотр</button>
 				  </div>
 				</div>
-          
           		<div class="card" style="width: 18rem;">
 				  <img class="card-img-top" src="img/Room/Cook.jpg" alt="Кухня">
 				  <div class="card-body">
 					<h5 class="card-title">Кухня</h5>
-					<a href="#" class="btn btn-outline-light btn-lg">Просмотр</a>
+					<button data-toggle="modal" data-target="#modal_cook" class="btn btn-outline-info btn-lg">Просмотр</button>
 				  </div>
 				</div>
-          		
           		<div class="card" style="width: 18rem;">
 				  <img class="card-img-top"  src="img/Room/bath-room.jpg" alt="ванная">
 				  <div class="card-body">
 					<h5 class="card-title">Ванная</h5>
-					<a href="#" class="btn btn-outline-light btn-lg">Просмотр</a>
+					<button data-toggle="modal" data-target="#modal_bath" class="btn btn-outline-info btn-lg">Просмотр</button>
 				  </div>
 				</div>
-          
           		<div class="card" style="width: 18rem;">
 				  <img class="card-img-top" src="img/Room/room1.jpg" alt="Комната">
 				  <div class="card-body">
 					<h5 class="card-title">Комната 1</h5>
-					<a href="#" class="btn btn-outline-light btn-lg">Просмотр</a>
+					<button data-toggle="modal" data-target="#modal_room1" class="btn btn-outline-info btn-lg">Просмотр</button>
 				  </div>
 				</div>
-          
          		 <div class="card" style="width: 18rem;">
 				  <img class="card-img-top"src="img/Room/room2.jpg" alt="Комната">
 				  <div class="card-body">
 					<h5 class="card-title">Комната 2</h5>
-					<a href="#" class="btn btn-outline-light btn-lg">Просмотр</a>
+					<button data-toggle="modal" data-target="#modal_room2" class="btn btn-outline-info btn-lg">Просмотр</button>
 				  </div>
 				</div>
-        </div>
-        <hr>
-        <h1><u>ИЗБРАННЫЕ УСТРОЙСТВА</u></h1>s
+            </div>
+        <h1>ИЗБРАННЫЕ УСТРОЙСТВА</h1>
+        <div class="container center bord">
                 <div class="card" style="width: 18rem;">
 				  <img class="card-img-top"src="img/Devices/smart-TV.png" alt="Телевизор">
 				  <div class="card-body">
 					<h5 class="card-title">Телевизор</h5>
 					<h6 class="card-subtitle mb-2  ">Состояние:</h6>
-					<a href="#" class="btn btn-outline-light btn-xs">Включить</a>
-    				<a href="#" class="btn btn-outline-light btn-xs">Отключить</a>
+					<a href="" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
 				  </div>
 				</div>
-              
                <div class="card" style="width: 18rem;">
 				  <img class="card-img-top" src="img/Devices/Robot.jpg" alt="Робот-пылесос">
 				  <div class="card-body">
 					<h5 class="card-title">Робот-пылесо</h5>
 					<h6 class="card-subtitle mb-2  ">Состояние:</h6>
-					<a href="#" class="btn btn-outline-light btn-xs">Включить</a>
-    				<a href="#" class="btn btn-outline-light btn-xs">Отключить</a>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
 				  </div>
 				</div>
-              
                <div class="card" style="width: 18rem;">
 				  <img class="card-img-top" src="img/Devices/samrt-ref.jpg" alt="Смарт-холодильник">
 				  <div class="card-body">
 					<h5 class="card-title">Смарт-холодильник</h5>
 					<h6 class="card-subtitle mb-2  ">Состояние:</h6>
-					<a href="#" class="btn btn-outline-light btn-xs">Включить</a>
-    				<a href="#" class="btn btn-outline-light btn-xs">Отключить</a>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
 				  </div>
 				</div>
+            </div>
+        </div>
+<!--  Modal    -->
+<div>    
+<div class="modal fade" id="modal_gost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Гостиница</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <h2>Датчики</h2>
+            <div class="container center bord">
+                <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/fire-device.png" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик пожара</h5>
+					<h6 class="card-subtitle mb-2  "><div class=" alert-success">Включен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+     	        <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/temp-dev.jpg" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик температуры</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-danger">Отключен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+           		 <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/door-dev.png" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик открытия</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-success">Включен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+            </div>
+           <h2>Устройства</h2>
+           <div class="container center bord">
+           		<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/smart-TV.png" alt="Смарт-телевизор">
+				  <div class="card-body">
+					<h5 class="card-title">Умный телевизор</h5>
+    				<h6 class="card-subtitle mb-2"><div class="alert-danger">Отключен</div></h6>
+    				<a href="#" class="btn btn-outline-success  btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+          		<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/Robot.jpg" alt="Робот-пылесос">
+				  <div class="card-body">
+					<h5 class="card-title">Робот-пылесос</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-warning">Требуется ремонт</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+           </div>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_cook" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Кухня</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+    <h2>Датчики</h2>
+            <div class="container center bord">
+                <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/fire-device.png" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик пожара</h5>
+					<h6 class="card-subtitle mb-2  "><div class=" alert-success">Включен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+            </div>
+           <h2>Устройства</h2>
+           <div class="container center bord">
+           		<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/samrt-ref.jpg" alt="Смарт-холодильник">
+				  <div class="card-body">
+					<h5 class="card-title">Умный холодильник</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-success">Включен</div></h6>
+					<a href="#" class="btn btn-outline-success  btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+           </div>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_bath" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ванная</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+    <h2>Датчики</h2>
+            <div class="container center bord">
+              <div class="card" style="width: 18rem;">
+				  <img class="card-img-top"  src="img/Devices/water-dev.png" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик протечки</h5>
+					<h6 class="card-subtitle mb-2  "> <div class="alert-danger">Отключен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+            </div>
+           <h2>Устройства</h2>
+           <div class="container center bord">
+           <h1>Устройств в данной комнате нет :(</h1>	
+           </div>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_room1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Комната1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+          <div class="modal-body">
+    <h2>Датчики</h2>
+            <div class="container center bord">
+                <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/fire-device.png" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик пожара</h5>
+					<h6 class="card-subtitle mb-2  "><div class=" alert-success">Включен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+     	        <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/temp-dev.jpg" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик температуры</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-danger">Отключен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+           		<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/door-dev.png" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик открытия</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-success">Включен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+            </div>
+           <h2>Устройства</h2>
+           <div class="container center bord">
+           	<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/mus-dev.jpg" alt="Смарт-колонка">
+				  <div class="card-body">
+					<h5 class="card-title">Умная колонка</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-danger">Отключен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+          		 <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/smart-TV.png" alt="Смарт-телевизор">
+				  <div class="card-body">
+					<h5 class="card-title">Умный телевизор</h5>
+    				<h6 class="card-subtitle mb-2"><div class="alert-danger">Отключен</div></h6>
+    				<a href="#" class="btn btn-outline-success  btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+           </div>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_room2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Комната2</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+         <div class="modal-body">
+    <h2>Датчики</h2>
+            <div class="container center bord">
+                <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/fire-device.png" alt="Датчик">
+				</div>
+     	        <div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/temp-dev.jpg" alt="Датчик">
+				  <div class="card-body">
+					<h5 class="card-title">Датчик температуры</h5>
+					<h6 class="card-subtitle mb-2  "><div class="alert-danger">Отключен</div></h6>
+					<a href="#" class="btn btn-outline-success btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+            </div>
+           <h2>Устройства</h2>
+           <div class="container center bord">
+           		<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src="img/Devices/smart-TV.png" alt="Смарт-телевизор">
+				  <div class="card-body">
+					<h5 class="card-title">Умный телевизор</h5>
+    				<h6 class="card-subtitle mb-2"><div class="alert-danger">Отключен</div></h6>
+    				<a href="#" class="btn btn-outline-success  btn-xs">Включить</a>
+    				<a href="#" class="btn btn-outline-danger btn-xs">Отключить</a>
+				  </div>
+				</div>
+           </div>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
     
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="js/main.js"></script>

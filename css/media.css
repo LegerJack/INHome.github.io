@@ -1,9 +1,9 @@
 @media screen and (max-width: 500px){
     .icon>h1{
-        font-size: 60px; 
+        font-size: 55px; 
     }
     .icon>h3{
-        font-size: 21px
+        font-size: 18px
     }
     .nav-on{display: none;}
 	.navbar-brand{display: none;}
