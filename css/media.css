@@ -11,7 +11,8 @@
         position:relative;
         right: 40px;
     }
-	
+	.displash{
+		width: 20rem !important;}
     .content1>h1{
         margin: 0;
     }
@@ -19,4 +20,10 @@
 }
 @media screen and (max-width: 1000px){
 		.navbar-brand{display: none;}
+	}
+@media screen and (max-width: 1500px){
+	.displash{
+		display: inline-block;
+		width: 500px;}
+	.navbar-collapse{text-align: center;}
 	}

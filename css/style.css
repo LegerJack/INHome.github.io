@@ -3,13 +3,14 @@ body{
 	font-family: "Russo One";
 	background: -webkit-linear-gradient(50deg,#032d3c,#f7ff56) fixed;
 }
-a{color:#c83660; text-decoration: none;}
-a:hover{color: #3a1f5d;}
+a{color:#f7ff56; text-decoration: none;}
+a:hover{
+	text-decoration: none;
+	color: #4be3ac;
+	text-shadow: 0 0 10px #032d3c;
+}
 header{
 	text-align: center
-}
-hr{
-    border-color: #3a1f5d;
 }
 img{
     width: 300px; height:180px;
@@ -37,8 +38,8 @@ header>h1,header>h3,.icon>h1,.icon>h3{
 .nav-link:hover{
 	background-color:#032d3c;
 	border-radius: 25px;
+	box-shadow: 0 5px 5px  #f7ff56;
 }
-
 .navbar-toggler{
 	border: none;
     text-align: center;
@@ -48,13 +49,13 @@ header>h1,header>h3,.icon>h1,.icon>h3{
 }
 input{
 	border: none;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 25px;
 	width: 300px;
 	height: 60px;
 	font-size: 20px;
 	padding-left: 20px;
 	margin-top: 45px; 
-	box-shadow: 0 5px 10px #3a1f5d;
+	box-shadow: 0 5px 10px #032d3c;
     font-family: "Russo One";
 }
 form>.button{
@@ -65,7 +66,11 @@ form>.button{
      height: 40px;
 }
 form>.button:active{background-color: #f7ff56;}
-
+.form>h5{
+	color:#032d3c; 
+	margin:50px 0;
+	text
+}
 .icon{ display: inline-block;}
 .nav-on,.nav-off{display: inline-block;}
 .nav-on>ul,.nav-off>ul, .nav-on>ul>li, .nav-off>ul>li{display: inline-block;}
@@ -113,9 +118,13 @@ option{
 button.close{
 	color: #FFF;
 }
+.modal-content{
+	background-color: #032d3c;
+	  box-shadow: 0 0 15px #4be3ac;
+}
 .modal-body{
 	background-color:  #032d3c;
-	color: #f7ff56
+	color: #f7ff56;
 }
 .modal-body h2{
 	margin: 10px 0;
@@ -124,11 +133,17 @@ button.close{
 .modal-body > .container .card{
       box-shadow: 0 0 15px #f7ff56; 
 }
+.modal-header , .modal-footer{
+	color: #4be3ac;
+	border-color: #4be3ac;
+}
+
 .disable{display: none;}
-.active{
+.active, .nav-link:active{
 	background-color: #032d3c;
-	box-shadow: 4px 4px 7px #032d3c;
+	box-shadow: 4px 4px 4px #4be3ac;
 	border-radius: 20px;
+	color: #4be3ac !important;
 }
 ul.navbar-nav{
 	border-top: 1px solid #f7ff56;
