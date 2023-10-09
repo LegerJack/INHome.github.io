@@ -1,0 +1,9 @@
+<h1>{{@title}}</h1>
+
+<ul>
+    {{#each @devices as |device|}}
+    <li>
+        <button type="button" {{on 'click' (fn this.showDeviceName device)}}>{{device}}</button>
+        </li>
+    {{/each}}
+</ul>
